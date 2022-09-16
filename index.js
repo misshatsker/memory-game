@@ -1,4 +1,4 @@
-const backMedia = '/media/back.png';
+const backMedia = './media/back.png';
 
 let previousCard = null;
 
@@ -84,7 +84,7 @@ const cardTitles = [
 const doubleArrayItems = (arr) => [...arr, ...arr];
 const shuffleArray = (arr) => arr.sort(() => 0.5 - Math.random());
 const getMyCardsFromTitles = (titles) =>
-    titles.map((title) => new MyCard(`/media/${title}.png`));
+    titles.map((title) => new MyCard(`./media/${title}.png`));
 
 const appendCards = (cards) => cards.forEach((card) => card.appendCard());
 
